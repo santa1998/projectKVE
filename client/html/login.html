@@ -1,0 +1,26 @@
+<template name="Login">
+  <div class="container">
+    <div class="row">
+      <h4>Autorizēties</h4>
+      <form class="col s10 l6 offset-s1 offset-l3">
+        <div class="row">
+          <div class="input-field col s10 l6 offset-s2 offset-l3">
+            <!-- E-mail -->
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="Wrong" data-success="Right">E-pasts</label>
+            <br>
+          </div>
+          <!-- Password -->
+          <div class="input-field col s10 l6 offset-s2 offset-l3">
+            <input id="password" type="password" class="validate">
+            <label for="password">Parole</label>
+          </div>
+          <!-- Button -->
+          <div class="input-field col s10 l3 offset-s4 offset-l4">
+            <a class="waves-effect waves-light btn">Pieslēgties</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
