@@ -1,25 +1,30 @@
 <template name="Login">
   <div class="container">
     <div class="row">
-      <h4>Autorizēties</h4>
-      <form class="col s10 l6 offset-s1 offset-l3">
+      <form id="login-form" class="col s9 l4 offset-s1 offset-l4 teal lighten-5">
+        <h4>Autorizēties</h4>
         <div class="row">
-          <div class="input-field col s10 l6 offset-s2 offset-l3">
-            <!-- E-mail -->
-            <input id="email" type="email" class="validate">
-            <label for="email" data-error="Wrong" data-success="Right">E-pasts</label>
-            <br>
+          <!-- E-mail -->
+          <div class="input-field col s9 l9 offset-s1 offset-l1">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="email icon_prefix" type="email" class="validate">
+            <label for="email icon_prefix" data-error="E-pasta struktūrai jābūt: example@example.com">E-pasts</label>
+            <br><br>
           </div>
           <!-- Password -->
-          <div class="input-field col s10 l6 offset-s2 offset-l3">
-            <input id="password" type="password" class="validate">
-            <label for="password">Parole</label>
+          <div class="input-field col s9 l9 offset-s1 offset-l1">
+            <i class="material-icons prefix">lock</i>
+            <input id="password icon_prefix" type="password" class="validate">
+            <label for="password icon_prefix">Parole</label>
           </div>
           <!-- Button -->
-          <div class="input-field col s10 l3 offset-s4 offset-l4">
+          <div class="input-field col s9 l3 offset-s3 offset-l3">
             <a class="waves-effect waves-light btn">Pieslēgties</a>
           </div>
         </div>
+        <div class="password-restore">
+          <a href="#" target="_blank">Aizmirsi paroli?</a>
+        </div><br>
       </form>
     </div>
   </div>
